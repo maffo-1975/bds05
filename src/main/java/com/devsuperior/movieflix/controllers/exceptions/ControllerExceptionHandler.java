@@ -1,4 +1,4 @@
-package com.devsuperior.movieflix.resource.exceptions;
+package com.devsuperior.movieflix.controllers.exceptions;
 
 import java.time.Instant;
 
@@ -15,7 +15,7 @@ import com.devsuperior.movieflix.services.exceptions.DatabaseException;
 import com.devsuperior.movieflix.services.exceptions.ResourceNotFoundException;
 
 @ControllerAdvice
-public class ResourceExceptionHandler {
+public class ControllerExceptionHandler {
 
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<StandardError> entityNotFound(ResourceNotFoundException e, HttpServletRequest request) {
